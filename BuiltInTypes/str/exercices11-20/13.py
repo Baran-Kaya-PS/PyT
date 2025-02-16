@@ -2,10 +2,10 @@
 
 user_input = input("--> ")
 
-word_array = user_input.split()
+words = user_input.split()
 
 processed_input = ""
-for word in word_array:
+for word in words:
     processed_input+=(word+" ")
 
 print(processed_input)
