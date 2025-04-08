@@ -1,6 +1,7 @@
 l = "A1 A2 A3 A4".split()
 
-l[0],l[1],l[2],l[3] = [1,2,3,4]
+x,y,z,w=l[0],l[1],l[2],l[3]
 
-t = tuple(l)
+t = (x,y,z,w)
+
 print(t)
