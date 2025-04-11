@@ -22,6 +22,16 @@ for i in range(len(l[0])):
     l2.append(new_row)
 print(l2)
 
-l2 = list(zip(*l))  # Donne des tuples
+print("test zip")
+
+print(list(zip(*l)))
+print(list(zip(l)))
+
+
+print("test zip terminé")
+
+
+l2 = list(zip(*l))  # unpacking
 l2 = [list(row) for row in l2]  # Convertit en listes pour garder le même format
 print(l2)
+
