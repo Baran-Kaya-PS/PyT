@@ -7,7 +7,7 @@
 l = "a b c d e f g h i j k l m".split()
 print(l)
 try:
-    ui = input("-->")
+    ui = input("-->").lower()
     print(l.index(ui)+1)
 except:
     print("Value does not exist")
