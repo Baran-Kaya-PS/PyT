@@ -11,7 +11,7 @@ dictionary = dict(zip(item_name,quantity))
 
 print(dictionary)
 
-for x in range(5):
+for _ in range(5):
     ui = input("--> ").lower()
     if ui in dictionary:
         dictionary[ui] +=1
