@@ -7,4 +7,4 @@
 # ---
 
 if __name__ == "__main__": #
-    print("you can only see this on mody.py")
+    print("you can only see this on modu.py")
