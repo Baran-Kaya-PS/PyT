@@ -14,6 +14,7 @@ while confirmation not in ("yes","no"):
 def addlog(log):
     with open(lf,'a',encoding="utf-8") as tf:
         tf.write(f"{log}\n")
+        print("message ajouté au journal")
 
 
 if confirmation == "yes":
