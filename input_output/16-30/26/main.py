@@ -7,7 +7,7 @@ def extractComment(line):
         if line.startswith("#"):
             return line
         else:
-            return line[line.index('#')::]
+            return line[line.index('#')+1::]
     else:
         return None
 # with open("data.txt","r",encoding="utf-8") as f:
