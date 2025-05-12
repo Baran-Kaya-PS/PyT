@@ -1,0 +1,20 @@
+# Global settings
+[General]
+username=alice
+timeout = 30
+weird=line=here
+
+Just some free-form text.
+# Another comment with ###
+
+[User Settings]
+enabled=true
+colors=red,green,blue
+ timeout = 45
+novalue=
+
+[Broken Section
+orphan line with no pattern
+
+[Empty Section]
+# End of file
