@@ -11,7 +11,7 @@ def extractComment(line):
         if line.startswith("#"):
             return line
         else:
-            idx = line.index('#') + 1
+            idx = line.index('#')
             return line[idx::]
     else:
         return None
@@ -25,7 +25,7 @@ def extractVariable(line):
     if isVariable(line):
         if isComment(line):
             comment = extractComment(line)
-            line = re.sub(re.escape(comment),"",line).replace("#","")
+            line = re.sub(re.escape(comment),"",line)
             return line
         return line
     else:
