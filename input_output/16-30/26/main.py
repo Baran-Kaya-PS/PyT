@@ -12,7 +12,7 @@ def extractComment(line):
             return line
         else:
             idx = line.index('#')
-            return line[idx::]
+            return line[idx::].strip()
     else:
         return None
 
