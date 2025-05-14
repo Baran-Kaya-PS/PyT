@@ -64,4 +64,16 @@ def extractSection(line):
     return line[1:-1]
 
 
-# with open("data.txt","r",encoding="utf-8") as f:
+def parse_file(path):
+    comments     = []   # [(line_no, text), …]
+    sections     = {}   # { section_name: { start_line: int, entries: {key: (value, line_no), …} }, … }
+    free_lines   = []   # [(line_no, text), …]
+    errors       = []   # [(line_no, text, description), …]
+
+    curr_section = None
+
+    sections["Global"] = {"start_line":0,"entries":{}}
+
+    with open(path,"r",encoding="utf-8") as f:
+        for lineno,raw in enumerate(f,start=1):
+            line = raw.rstrip("\n").strip()
