@@ -1,0 +1,8 @@
+Hello, world!
+This is a test line.
+Python programming is fun!
+The quick brown fox jumps over the lazy dog.
+12345 numbers and symbols #$%^&*
+MiXeD CaSe LiNe.
+“Quotes,” commas, and—dashes!
+Last line: end of file.

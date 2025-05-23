@@ -10,7 +10,7 @@ Just some free-form text.
 [User Settings]
 enabled=true
 colors=red,green,blue
- timeout = 45
+timeout = 45
 novalue=
 
 [Broken Section
