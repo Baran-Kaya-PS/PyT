@@ -1,0 +1,13 @@
+[
+  {"name": "Alice", "age": 28, "city": "Paris"},
+  {"name": "Bob", "age": "thirty-five", "city": "London"},
+  {"name": "Charlie", "age": 41, "city": "Berlin"},
+  {"name": "Diana", "age": 23},
+  {"name": 123, "age": 30, "city": "Oslo"},
+  {"name": "Frank", "age": 46, "city": null},
+  {"name": "Grace", "age": 29, "city": "Rome"},
+  {"name": "Hugo", "age": 32, "city": "Vienna"},
+  {"name": "Isabelle", "age": "39", "city": "Zurich"},
+  {"name": "Jack", "age": 44, "city": "Lisbon"},
+  {"name": "Kate", "age": "forty", "city": "Dublin"}
+]
