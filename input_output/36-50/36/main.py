@@ -32,6 +32,6 @@ with open("data.json","r") as f:
             add_log(item, lineno)
 
 if logs:
-    with open("err_lol.txt","w",encoding="utf-8") as logfile:
+    with open("err_log.txt","w",encoding="utf-8") as logfile:
         for log in logs:
             logfile.write(f"Line {log['lineno']} : {log['data']}\n")

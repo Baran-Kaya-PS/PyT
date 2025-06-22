@@ -27,6 +27,7 @@ def extract(path):
     if dirs:
         for dir in dirs:
             extract(os.path.join(path,dir))
+            
 if __name__ == '__main__':
     extract(r"C:\Users\Baran\PycharmProjects\PythonCrashCourse\input_output\36-50\37")
 
