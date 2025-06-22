@@ -23,9 +23,8 @@ def list():
 
 
 def load_tasks():
-    buffer = []
-    return buffer
-
+    with open("tasks.json", "r") as f:
+        return json.loaf(f)
 
 def save():
     buffer = load_tasks()
