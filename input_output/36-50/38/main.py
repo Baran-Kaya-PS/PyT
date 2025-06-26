@@ -18,9 +18,10 @@ def add(description:str):
     tasks.append({'created':ts,'task':description})
     print(f"Tache ajoutée : [{ts} : {description}]")
 
-def list():
+def list(tasks):
+    for idx, task in enumerate(tasks):
+        pass
     pass
-
 
 def load_tasks():
     with open("tasks.json", "r") as f:
