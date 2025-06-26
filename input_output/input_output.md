@@ -1,10 +1,10 @@
 Below is a **50-exercise** collection centered on **Python Input & Output**, organized into **Medium**, **Hard**, and **Challenge** tiers. Each exercise follows the requested format:
 
 1. **Number of exercise : Name of exercise**  
-2. **What you must do**  
-3. **Functions/Modules You Can Use**  
-4. **Different Ways to Solve (Conceptual)**  
-5. **Next Exercise**  
+   2. **What you must do**  
+   3. **Functions/Modules You Can Use**  
+   4. **Different Ways to Solve (Conceptual)**  
+   5. **Next Exercise**  
 
 All examples reference *possible* functions or modules, but **no code** is provided.
 
@@ -20,12 +20,12 @@ Prompt the user for their first and last name, then print a greeting (e.g., “H
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `print()`
-- f-strings, `str.format()`, or older `%` formatting
+  - `print()`
+  - f-strings, `str.format()`, or older `%` formatting
 
 **Different Ways to Solve (Conceptual)**  
 1. Construct a formatted string using f-strings or `str.format()` to place first and last name in one sentence.  
-2. Use `%` formatting to show how it was done historically.
+   2. Use `%` formatting to show how it was done historically.
 
 **Next Exercise**  
 [2: Right-Justified Numbers](#2-right-justified-numbers)
@@ -38,12 +38,12 @@ Print numbers from 1 to 10, each right-justified to a width of 3 characters, so 
 
 **Functions/Modules You Can Use**  
 - `range()`
-- `print()`
-- `str.rjust()`, or format specifiers (f-strings / `str.format()`)
+  - `print()`
+  - `str.rjust()`, or format specifiers (f-strings / `str.format()`)
 
 **Different Ways to Solve (Conceptual)**  
 1. Loop from 1 to 10, convert each number to string, and use `rjust()` with a width of 3.  
-2. Use format mini-language with something like `">3"` or a similar approach in f-strings.
+   2. Use format mini-language with something like `">3"` or a similar approach in f-strings.
 
 **Next Exercise**  
 [3: Reading a Single File](#3-reading-a-single-file)
@@ -56,12 +56,12 @@ Create or use a small text file (`story.txt`). Open and read all its lines, then
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `with` statement (context manager)
-- `str.strip()`
+  - `with` statement (context manager)
+  - `str.strip()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Use `with open(...) as f:` and `readlines()` then iterate over each line.  
-2. Use `for line in f:` and strip newlines while printing.
+   2. Use `for line in f:` and strip newlines while printing.
 
 **Next Exercise**  
 [4: Counting Lines](#4-counting-lines)
@@ -74,12 +74,12 @@ Prompt the user for a filename. Read through the file line-by-line, and count ho
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `open()`, file iteration
-- A loop or list comprehension for counting
+  - `open()`, file iteration
+  - A loop or list comprehension for counting
 
 **Different Ways to Solve (Conceptual)**  
 1. Increment a counter in a `for` loop.  
-2. Convert the file’s lines to a list and use `len()`.
+   2. Convert the file’s lines to a list and use `len()`.
 
 **Next Exercise**  
 [5: Writing User Input to File](#5-writing-user-input-to-file)
@@ -92,12 +92,12 @@ Ask the user for some text input, then write exactly what they typed into a new 
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `open(..., "w")`
-- `print()`
+  - `open(..., "w")`
+  - `print()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Use a single `with open(..., "w"):` block and `write(...)`.  
-2. Append additional text, or handle newline yourself if you want more advanced behavior.
+   2. Append additional text, or handle newline yourself if you want more advanced behavior.
 
 **Next Exercise**  
 [6: Simple Table Printing](#6-simple-table-printing)
@@ -110,12 +110,12 @@ Given a dictionary (e.g., `{ "Alice": 24, "Bob": 19, "Charlie": 30 }`), print ea
 
 **Functions/Modules You Can Use**  
 - Dictionary iteration
-- f-strings or `str.format()`
-- Right or left alignment
+  - f-strings or `str.format()`
+  - Right or left alignment
 
 **Different Ways to Solve (Conceptual)**  
 1. Determine suitable column widths and align each value accordingly.  
-2. Use format mini-language (e.g., `"{:<10}{:>5}"`) or a custom approach with `ljust()`/`rjust()`.
+   2. Use format mini-language (e.g., `"{:<10}{:>5}"`) or a custom approach with `ljust()`/`rjust()`.
 
 **Next Exercise**  
 [7: Reading and Summing Numbers](#7-reading-and-summing-numbers)
@@ -128,13 +128,13 @@ Ask the user for a filename. The file contains one integer per line. Read them, 
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `open()`
-- `int()`
-- Summation with loops or built-in functions
+  - `open()`
+  - `int()`
+  - Summation with loops or built-in functions
 
 **Different Ways to Solve (Conceptual)**  
 1. Accumulate the sum in a loop.  
-2. Use a list comprehension plus `sum()`.
+   2. Use a list comprehension plus `sum()`.
 
 **Next Exercise**  
 [8: Appending to a Log File](#8-appending-to-a-log-file)
@@ -147,12 +147,12 @@ Create or open `log.txt` in append mode. Let the user type a message, and write 
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `open(..., "a")`
-- Possibly `datetime` for timestamps
+  - `open(..., "a")`
+  - Possibly `datetime` for timestamps
 
 **Different Ways to Solve (Conceptual)**  
 1. Append the text with a simple custom timestamp string.  
-2. Use Python’s date/time utilities for a more precise format.
+   2. Use Python’s date/time utilities for a more precise format.
 
 **Next Exercise**  
 [9: Reading Partial File Content](#9-reading-partial-file-content)
@@ -165,12 +165,12 @@ Have a file with at least 100 characters. Open the file, read the first 50 chara
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `read(size)`
-- Possibly loops or repeated calls to `read()`
+  - `read(size)`
+  - Possibly loops or repeated calls to `read()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Repeatedly call `read(50)` until the file is exhausted.  
-2. Use a while loop, checking if the returned data is empty.
+   2. Use a while loop, checking if the returned data is empty.
 
 **Next Exercise**  
 [10: Manual String Formatting vs. f-Strings](#10-manual-string-formatting-vs-f-strings)
@@ -183,12 +183,12 @@ Create a dictionary (`product -> quantity`) and print each key-value pair in two
 
 **Functions/Modules You Can Use**  
 - Dictionary iteration
-- `str.ljust()`, `str.rjust()`
-- f-strings or `str.format()`
+  - `str.ljust()`, `str.rjust()`
+  - f-strings or `str.format()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Construct strings with `+` and spacing or `rjust()/ljust()`.  
-2. Use f-strings with alignment specifiers.
+   2. Use f-strings with alignment specifiers.
 
 **Next Exercise**  
 [11: Check If File Exists Then Write](#11-check-if-file-exists-then-write)
@@ -201,12 +201,12 @@ Prompt user for a filename, check if it exists. If it does, ask whether to overw
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `os.path` or a `try/except` approach
-- `open()` in various modes
+  - `os.path` or a `try/except` approach
+  - `open()` in various modes
 
 **Different Ways to Solve (Conceptual)**  
 1. Use `try: open(...) except FileNotFoundError:` to detect existence.  
-2. Use `import os`, then `os.path.exists(filename)` to check.
+   2. Use `import os`, then `os.path.exists(filename)` to check.
 
 **Next Exercise**  
 [12: Interactive Palindrome Checker (Console Input)](#12-interactive-palindrome-checker-console-input)
@@ -219,12 +219,12 @@ Continuously prompt the user for a word (until “quit”). Check if it’s a pa
 
 **Functions/Modules You Can Use**  
 - `input()`
-- String slicing
-- Loops and `break`
+  - String slicing
+  - Loops and `break`
 
 **Different Ways to Solve (Conceptual)**  
 1. Compare string to its reversed version.  
-2. Use a function that checks palindrome character by character.
+   2. Use a function that checks palindrome character by character.
 
 **Next Exercise**  
 [13: zfill Practice](#13-zfill-practice)
@@ -237,11 +237,11 @@ Ask the user for a number as a string (e.g., “58”) and apply `.zfill(6)` to 
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `str.zfill()`
+  - `str.zfill()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Directly apply `zfill(6)` on the user input.  
-2. Demonstrate how it handles negative numbers or decimal strings if you want extra exploration.
+   2. Demonstrate how it handles negative numbers or decimal strings if you want extra exploration.
 
 **Next Exercise**  
 [14: Load JSON from a String](#14-load-json-from-a-string)
@@ -254,12 +254,12 @@ Have a valid JSON string (like `{"username": "alice", "active": true, "score": 4
 
 **Functions/Modules You Can Use**  
 - `import json`
-- `json.loads()`
-- `print()`
+  - `json.loads()`
+  - `print()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Print the raw dictionary.  
-2. Loop through dictionary items and format output.
+   2. Loop through dictionary items and format output.
 
 **Next Exercise**  
 [15: Print with Old % Formatting](#15-print-with-old--formatting)
@@ -272,12 +272,12 @@ Prompt the user for a floating-point number, then print it in a sentence using `
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `float()`
-- `%` formatting (e.g., `%5.2f`)
+  - `float()`
+  - `%` formatting (e.g., `%5.2f`)
 
 **Different Ways to Solve (Conceptual)**  
 1. Use `%` with a format like `%.2f`.  
-2. Let the user type the entire expression, but that might defeat the purpose of demonstrating `%`.
+   2. Let the user type the entire expression, but that might defeat the purpose of demonstrating `%`.
 
 **Next Exercise**  
 [16: Advanced F-String Formatting](#16-advanced-f-string-formatting)
@@ -294,12 +294,12 @@ Given variables like `product = "Laptop"`, `price = 899.99`, `quantity = 7`, pri
 
 **Functions/Modules You Can Use**  
 - f-strings with format specifiers
-- `str.zfill()`
-- Possibly `"{:10}"`, `"{:>8.2f}"` if using `str.format()`
+  - `str.zfill()`
+  - Possibly `"{:10}"`, `"{:>8.2f}"` if using `str.format()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Use f-strings with something like `f"{product:<10}"`, `f"{price:>8.2f}"`, `f"{quantity:04}"`.  
-2. Combine old `%` formatting or `str.format()` with alignment codes.
+   2. Combine old `%` formatting or `str.format()` with alignment codes.
 
 **Next Exercise**  
 [17: Reading Large Files in Chunks](#17-reading-large-files-in-chunks)
@@ -312,12 +312,12 @@ Use a large text file. Read it in chunks of 1024 bytes, printing a progress mess
 
 **Functions/Modules You Can Use**  
 - `open(..., "rb")` or `open(..., "r")`
-- `read(size)`
-- Possibly a while loop
+  - `read(size)`
+  - Possibly a while loop
 
 **Different Ways to Solve (Conceptual)**  
 1. Use a loop that reads 1024 bytes until an empty result.  
-2. Track chunk count and multiply by 1024 for approximate position.
+   2. Track chunk count and multiply by 1024 for approximate position.
 
 **Next Exercise**  
 [18: Converting a Text File to JSON](#18-converting-a-text-file-to-json)
@@ -330,12 +330,12 @@ Given a text file with lines like `Alice,24`, `Bob,19`, `Charlie,30`, parse each
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `json.dump()`
-- String splitting
+  - `json.dump()`
+  - String splitting
 
 **Different Ways to Solve (Conceptual)**  
 1. Read line by line, split on comma, build a list of dictionaries.  
-2. Use `map()` or a comprehension to parse lines before dumping to JSON.
+   2. Use `map()` or a comprehension to parse lines before dumping to JSON.
 
 **Next Exercise**  
 [19: Seeking and Overwriting](#19-seeking-and-overwriting)
@@ -348,12 +348,12 @@ Open a file in binary mode, write 20 bytes, then use `seek()` to move to the 10t
 
 **Functions/Modules You Can Use**  
 - `open(..., "rb+")` or `open(..., "wb+")`
-- `seek()`
-- `write()`
+  - `seek()`
+  - `write()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Write a string or bytes, then `seek(10, 0)` and overwrite.  
-2. Print or read after to confirm changes.
+   2. Print or read after to confirm changes.
 
 **Next Exercise**  
 [20: Formatted Table of Factorials](#20-formatted-table-of-factorials)
@@ -366,11 +366,11 @@ For numbers 1 to 10, print each number and its factorial in two columns. The fir
 
 **Functions/Modules You Can Use**  
 - `math.factorial()` or a custom factorial
-- f-strings or `str.format()`
+  - f-strings or `str.format()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Use a loop from 1 to 10 and format each row.  
-2. Possibly create a list of tuples, then print them in a second step.
+   2. Possibly create a list of tuples, then print them in a second step.
 
 **Next Exercise**  
 [21: Counting Word Frequency in a File](#21-counting-word-frequency-in-a-file)
@@ -383,12 +383,12 @@ Read a file into a string, split into words, count occurrences of each word, the
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `split()` or `re.split()` for advanced splitting
-- A dictionary or `collections.Counter`
+  - `split()` or `re.split()` for advanced splitting
+  - A dictionary or `collections.Counter`
 
 **Different Ways to Solve (Conceptual)**  
 1. Use a normal dictionary to count.  
-2. Use `collections.Counter` and `most_common(5)`.
+   2. Use `collections.Counter` and `most_common(5)`.
 
 **Next Exercise**  
 [22: Generating a 'CSV' File](#22-generating-a-csv-file)
@@ -401,12 +401,12 @@ Ask the user for 3 student names and their scores. Write them into `grades.csv` 
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `open(..., "w")`
-- Possibly the `csv` module
+  - `open(..., "w")`
+  - Possibly the `csv` module
 
 **Different Ways to Solve (Conceptual)**  
 1. Manually write lines in the format `"name,score"`.  
-2. Use Python’s built-in `csv.writer` for more complex scenarios.
+   2. Use Python’s built-in `csv.writer` for more complex scenarios.
 
 **Next Exercise**  
 [23: Loading and Updating JSON](#23-loading-and-updating-json)
@@ -419,12 +419,12 @@ Have a JSON file listing tasks (title + boolean “completed”). Load it, promp
 
 **Functions/Modules You Can Use**  
 - `json.load()` / `json.dump()`
-- Loops to find the matching dictionary
-- `input()`
+  - Loops to find the matching dictionary
+  - `input()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Convert the JSON list to a Python list, iterate, update the matching item, dump back.  
-2. Implement a function for updating tasks to keep the code clean.
+   2. Implement a function for updating tasks to keep the code clean.
 
 **Next Exercise**  
 [24: Multiple File Reading](#24-multiple-file-reading)
@@ -437,12 +437,12 @@ Ask for multiple filenames in one line (comma-separated). For each, open and rea
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `split(',')`
-- `open()` in a `try/except`
+  - `split(',')`
+  - `open()` in a `try/except`
 
 **Different Ways to Solve (Conceptual)**  
 1. Use a loop, strip spaces, attempt to open each file, read and measure length.  
-2. If file not found, log an error message and move on.
+   2. If file not found, log an error message and move on.
 
 **Next Exercise**  
 [25: Lexical Order of Lines](#25-lexical-order-of-lines)
@@ -455,12 +455,12 @@ Read lines from `lines.txt`, sort them lexicographically, write them to `sorted_
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `sorted()` on a list of strings
-- Slicing for the first 5 elements
+  - `sorted()` on a list of strings
+  - Slicing for the first 5 elements
 
 **Different Ways to Solve (Conceptual)**  
 1. Read and store lines in a list, then sort.  
-2. Use an in-memory approach or a more complex external sort for huge files.
+   2. Use an in-memory approach or a more complex external sort for huge files.
 
 **Next Exercise**  
 [26: Selective Data Extraction](#26-selective-data-extraction)
@@ -473,12 +473,12 @@ Given lines of varying formats (comments starting with `#`, key-value lines with
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `startswith()`
-- String splitting on `=`
+  - `startswith()`
+  - String splitting on `=`
 
 **Different Ways to Solve (Conceptual)**  
 1. Use conditionals to detect `#`, `=`, or `[Section]`.  
-2. Build multiple data structures (a dictionary, a list, maybe a list of sections).
+   2. Build multiple data structures (a dictionary, a list, maybe a list of sections).
 
 **Next Exercise**  
 [27: Apply a Function to File Lines](#27-apply-a-function-to-file-lines)
@@ -491,12 +491,12 @@ Write a function (e.g., `process_line(line)`) that modifies text (like reversing
 
 **Functions/Modules You Can Use**  
 - `open()`
-- A custom `process_line(line)`
-- Possibly `str.upper()`, `str.lower()`, etc.
+  - A custom `process_line(line)`
+  - Possibly `str.upper()`, `str.lower()`, etc.
 
 **Different Ways to Solve (Conceptual)**  
 1. Call `process_line(line)` in a loop while reading the file.  
-2. Store all processed lines in a list before printing them at once.
+   2. Store all processed lines in a list before printing them at once.
 
 **Next Exercise**  
 [28: Write a Custom Logger](#28-write-a-custom-logger)
@@ -509,12 +509,12 @@ Create a function `log_event(message, level="INFO")` that appends to `app.log` i
 
 **Functions/Modules You Can Use**  
 - `open(..., "a")`
-- Possibly `datetime` for timestamps
-- A function definition for logging
+  - Possibly `datetime` for timestamps
+  - A function definition for logging
 
 **Different Ways to Solve (Conceptual)**  
 1. Use simple string concatenation for formatting.  
-2. Use advanced time formatting if desired.
+   2. Use advanced time formatting if desired.
 
 **Next Exercise**  
 [29: User Input, Validate, Write](#29-user-input-validate-write)
@@ -527,12 +527,12 @@ Prompt the user for an email address. Keep asking until they provide a string wi
 
 **Functions/Modules You Can Use**  
 - `input()`
-- `while` loops
-- `open()`
+  - `while` loops
+  - `open()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Validate with a simple `if "@" in user_input`.  
-2. Read `emails.txt` again to count lines after writing.
+   2. Read `emails.txt` again to count lines after writing.
 
 **Next Exercise**  
 [30: Progress Bar Simulation](#30-progress-bar-simulation)
@@ -545,12 +545,12 @@ Simulate a progress bar from 1 to 100, updating a single console line (e.g., `[#
 
 **Functions/Modules You Can Use**  
 - Loops
-- Possibly `time.sleep()`
-- Printing with `\r` or `sys.stdout.flush()`
+  - Possibly `time.sleep()`
+  - Printing with `\r` or `sys.stdout.flush()`
 
 **Different Ways to Solve (Conceptual)**  
 1. Print each percentage with carriage return to overwrite the line.  
-2. Build a string representing how many `#` vs. spaces.
+   2. Build a string representing how many `#` vs. spaces.
 
 **Next Exercise**  
 [31: Formatted Directory Listing (Requires OS Knowledge)](#31-formatted-directory-listing-requires-os-knowledge)
@@ -563,13 +563,13 @@ Use `os.listdir()` to list files in the current directory. Print each filename l
 
 **Functions/Modules You Can Use**  
 - `import os`
-- `os.listdir()`
-- Possibly `os.path.getsize()`
-- Format strings
+  - `os.listdir()`
+  - Possibly `os.path.getsize()`
+  - Format strings
 
 **Different Ways to Solve (Conceptual)**  
 1. Gather filenames, get sizes, store in a list of tuples, then print.  
-2. Format each line so the name is in a certain width, size in another.
+   2. Format each line so the name is in a certain width, size in another.
 
 **Next Exercise**  
 [32: Custom JSON Encoder/Decoder](#32-custom-json-encoderdecoder)
@@ -582,11 +582,11 @@ Create a class `Person(name, age)`. Write logic to encode a `Person` into JSON a
 
 **Functions/Modules You Can Use**  
 - `json.dump()` / `json.load()`
-- Custom JSON encoder/decoder classes or hooks
+  - Custom JSON encoder/decoder classes or hooks
 
 **Different Ways to Solve (Conceptual)**  
 1. Use `default=` param for custom encoding and `object_hook` for decoding.  
-2. Manually convert `Person` objects to dictionaries, then decode them.
+   2. Manually convert `Person` objects to dictionaries, then decode them.
 
 **Next Exercise**  
 [33: Chunked Transfer to Another File](#33-chunked-transfer-to-another-file)
@@ -599,12 +599,12 @@ Open an existing file in binary mode, read it in 1 KB chunks, and write each chu
 
 **Functions/Modules You Can Use**  
 - `open(..., "rb")`
-- `read(1024)`
-- A loop until empty chunk
+  - `read(1024)`
+  - A loop until empty chunk
 
 **Different Ways to Solve (Conceptual)**  
 1. While loop reading 1024 bytes, writing to the new file.  
-2. Check final size using `os.path.getsize()` to confirm correctness.
+   2. Check final size using `os.path.getsize()` to confirm correctness.
 
 **Next Exercise**  
 [34: Generate a Table with the Old % Formatting](#34-generate-a-table-with-the-old--formatting)
@@ -617,11 +617,11 @@ Display a multiplication table (1 to 9) using the old `%` string formatting. Ali
 
 **Functions/Modules You Can Use**  
 - `%` formatting
-- Loops (nested loops for multiplication table)
+  - Loops (nested loops for multiplication table)
 
 **Different Ways to Solve (Conceptual)**  
 1. Loop over rows and columns, building each row as a string.  
-2. Format each multiplication result with something like `"%2d"` for neat alignment.
+   2. Format each multiplication result with something like `"%2d"` for neat alignment.
 
 **Next Exercise**  
 [35: Multi-File JSON Consolidation](#35-multi-file-json-consolidation)
@@ -634,12 +634,12 @@ Imagine multiple JSON files in a directory, each containing a list of dictionari
 
 **Functions/Modules You Can Use**  
 - `import os`
-- `json.load()` / `json.dump()`
-- List concatenation
+  - `json.load()` / `json.dump()`
+  - List concatenation
 
 **Different Ways to Solve (Conceptual)**  
 1. Gather filenames with `os.listdir()`, open each, extend a master list, then dump it.  
-2. Use a function that merges all lists dynamically as you read them.
+   2. Use a function that merges all lists dynamically as you read them.
 
 **Next Exercise**  
 [36: Custom CSV to JSON Parser with Error Handling](#36-custom-csv-to-json-parser-with-error-handling)
@@ -656,12 +656,12 @@ Parse a CSV file (e.g., `name,age,city`) line by line, attempt to convert `age` 
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `json.dump()`
-- A simple or advanced CSV parse (`split(',')` or `csv.reader`)
+  - `json.dump()`
+  - A simple or advanced CSV parse (`split(',')` or `csv.reader`)
 
 **Different Ways to Solve (Conceptual)**  
 1. Read each line, split by comma, use `int()` for age, handle exceptions.  
-2. Keep track of invalid lines separately, log them.
+   2. Keep track of invalid lines separately, log them.
 
 **Next Exercise**  
 [37: Two-Level File Reader (Packages + Modules)](#37-two-level-file-reader-packages--modules)
@@ -674,12 +674,12 @@ Ask the user for a directory, then recursively go through sub-directories, openi
 
 **Functions/Modules You Can Use**  
 - `import os`
-- `os.walk()` or manual recursion
-- Counting lines by reading
+  - `os.walk()` or manual recursion
+  - Counting lines by reading
 
 **Different Ways to Solve (Conceptual)**  
 1. Use `os.walk()` for simpler recursion.  
-2. Manually traverse directories with `os.listdir()` and detect sub-folders.
+   2. Manually traverse directories with `os.listdir()` and detect sub-folders.
 
 **Next Exercise**  
 [38: Interactive CLI: Save/Load State](#38-interactive-cli-saveload-state)
@@ -692,12 +692,12 @@ Write a mini command-line interface that maintains a list of tasks in memory. Co
 
 **Functions/Modules You Can Use**  
 - `input()` in a loop
-- `json.load()`, `json.dump()`
-- Possibly a dictionary or list to store tasks
+  - `json.load()`, `json.dump()`
+  - Possibly a dictionary or list to store tasks
 
 **Different Ways to Solve (Conceptual)**  
 1. Use an infinite while loop reading commands, then parse them.  
-2. Keep the code modular by separating each command’s logic.
+   2. Keep the code modular by separating each command’s logic.
 
 **Next Exercise**  
 [39: Head/Tail Command Implementation](#39-headtail-command-implementation)
@@ -710,12 +710,12 @@ Recreate simplified versions of UNIX `head` and `tail`. For `head <file> <N>`, p
 
 **Functions/Modules You Can Use**  
 - `open()`
-- Possibly reading all lines or using a buffer
-- `collections.deque` might help for tail
+  - Possibly reading all lines or using a buffer
+  - `collections.deque` might help for tail
 
 **Different Ways to Solve (Conceptual)**  
 1. Read file fully, slice the first/last N lines.  
-2. For very large files, read efficiently line by line for tail.
+   2. For very large files, read efficiently line by line for tail.
 
 **Next Exercise**  
 [40: F-String Debugging for Complex Expressions](#40-f-string-debugging-for-complex-expressions)
@@ -728,11 +728,11 @@ Write code that includes a few complex expressions (like dictionary lookups or a
 
 **Functions/Modules You Can Use**  
 - f-strings with `=`
-- Possibly a dictionary or calculations
+  - Possibly a dictionary or calculations
 
 **Different Ways to Solve (Conceptual)**  
 1. Use an example like `f"{my_dict['key']+x = }"`.  
-2. Provide multiple debug expressions in the same line.
+   2. Provide multiple debug expressions in the same line.
 
 **Next Exercise**  
 [41: Automatic Column Widths](#41-automatic-column-widths)
@@ -745,13 +745,13 @@ Read a CSV file with unknown columns. Determine the maximum width of each column
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `split(',')`
-- Possibly the `csv` module
-- `max()` logic for widths
+  - `split(',')`
+  - Possibly the `csv` module
+  - `max()` logic for widths
 
 **Different Ways to Solve (Conceptual)**  
 1. First pass: read all lines, parse columns, track max length for each column index.  
-2. Second pass or stored data: print each row with the correct spacing.
+   2. Second pass or stored data: print each row with the correct spacing.
 
 **Next Exercise**  
 [42: Encrypted File Write](#42-encrypted-file-write)
@@ -764,12 +764,12 @@ Prompt the user for a message, apply a simple Caesar cipher (shift each characte
 
 **Functions/Modules You Can Use**  
 - `open()`
-- Basic string manipulation (chr(), ord())
-- Possibly a separate decrypt function
+  - Basic string manipulation (chr(), ord())
+  - Possibly a separate decrypt function
 
 **Different Ways to Solve (Conceptual)**  
 1. Iterate over each character, shift by 3, handle wrap-around if letters only.  
-2. Shift all bytes if you consider binary data.
+   2. Shift all bytes if you consider binary data.
 
 **Next Exercise**  
 [43: Binary File Comparison](#43-binary-file-comparison)
@@ -782,12 +782,12 @@ Write a function to compare two binary files, returning True if they are identic
 
 **Functions/Modules You Can Use**  
 - `open(..., "rb")`
-- `read()` in chunks or all at once
-- Possibly a loop comparing chunks
+  - `read()` in chunks or all at once
+  - Possibly a loop comparing chunks
 
 **Different Ways to Solve (Conceptual)**  
 1. Compare them chunk by chunk.  
-2. Compare their sizes first, then compare content.
+   2. Compare their sizes first, then compare content.
 
 **Next Exercise**  
 [44: Merging Sorted Files](#44-merging-sorted-files)
@@ -800,12 +800,12 @@ Assume two text files each contain sorted integers (one per line). Merge them in
 
 **Functions/Modules You Can Use**  
 - `open()`
-- `readlines()` or a streaming approach
-- Possibly a “two-pointer” technique
+  - `readlines()` or a streaming approach
+  - Possibly a “two-pointer” technique
 
 **Different Ways to Solve (Conceptual)**  
 1. Read both lists fully, combine, then sort.  
-2. Do a true merge step, reading line by line from each file.
+   2. Do a true merge step, reading line by line from each file.
 
 **Next Exercise**  
 [45: Summaries of Log Files](#45-summaries-of-log-files)
@@ -818,12 +818,12 @@ Given a log file with lines like `[2025-04-16 10:00][INFO] Startup`, parse the t
 
 **Functions/Modules You Can Use**  
 - `open()`
-- String slicing or splitting
-- Possibly a dictionary to count levels
+  - String slicing or splitting
+  - Possibly a dictionary to count levels
 
 **Different Ways to Solve (Conceptual)**  
 1. Use brackets `[]` to split or find indexes.  
-2. Map each level to a numeric severity, then filter.
+   2. Map each level to a numeric severity, then filter.
 
 **Next Exercise**  
 [46: Large JSON Editor](#46-large-json-editor)
@@ -836,12 +836,12 @@ Handle a massive JSON file with an array of objects. Carefully load and update e
 
 **Functions/Modules You Can Use**  
 - `json.load()` but be mindful of memory
-- Possibly incremental or streaming approaches
-- Logic to add `"active": true` if missing
+  - Possibly incremental or streaming approaches
+  - Logic to add `"active": true` if missing
 
 **Different Ways to Solve (Conceptual)**  
 1. If memory allows, load entire JSON, loop, modify, dump.  
-2. For extremely large files, consider streaming solutions with libraries that parse JSON in chunks.
+   2. For extremely large files, consider streaming solutions with libraries that parse JSON in chunks.
 
 **Next Exercise**  
 [47: Recursive 'Tree' Print of Directories](#47-recursive-tree-print-of-directories)
@@ -854,12 +854,12 @@ Implement a “tree” command: print directory and file names with indentation 
 
 **Functions/Modules You Can Use**  
 - `os.listdir()`, `os.path.isdir()`
-- Recursion
-- Possibly a parameter to track depth
+  - Recursion
+  - Possibly a parameter to track depth
 
 **Different Ways to Solve (Conceptual)**  
 1. Recursively call a function that prints directories at each level.  
-2. Use `os.walk()` and compute indentation based on depth.
+   2. Use `os.walk()` and compute indentation based on depth.
 
 **Next Exercise**  
 [48: Simulated Database Write](#48-simulated-database-write)
@@ -872,12 +872,12 @@ Keep a dictionary in memory (like `id -> record`). Each time the user adds or mo
 
 **Functions/Modules You Can Use**  
 - `json.dump()`
-- Possibly multiple versions of the file or timestamped backups
-- Basic data structure manipulation
+  - Possibly multiple versions of the file or timestamped backups
+  - Basic data structure manipulation
 
 **Different Ways to Solve (Conceptual)**  
 1. Every modification triggers a “commit” by writing the entire dictionary.  
-2. Keep multiple commits to allow stepping backwards.
+   2. Keep multiple commits to allow stepping backwards.
 
 **Next Exercise**  
 [49: Custom Configuration Format](#49-custom-configuration-format)
@@ -899,12 +899,12 @@ Parse it so you end up with a nested dictionary, e.g. `{ "Settings": { "language
 
 **Functions/Modules You Can Use**  
 - `open()`
-- Checking lines for `[Section]` or `=`
-- Conditionals
+  - Checking lines for `[Section]` or `=`
+  - Conditionals
 
 **Different Ways to Solve (Conceptual)**  
 1. Keep track of the current section in a variable as you read.  
-2. Build sub-dictionaries inside a main dictionary keyed by section name.
+   2. Build sub-dictionaries inside a main dictionary keyed by section name.
 
 **Next Exercise**  
 [50: Multi-Mode File Operation (Argparse Simulation)](#50-multi-mode-file-operation-argparse-simulation)
@@ -915,17 +915,17 @@ Parse it so you end up with a nested dictionary, e.g. `{ "Settings": { "language
 **What You Must Do**  
 Write a script that takes a mode (`--read`, `--write`, or `--append`) and a filename:
 - `--read`: Print the file contents.
-- `--write`: Overwrite the file with user input.
-- `--append`: Append user input to the file.
+  - `--write`: Overwrite the file with user input.
+  - `--append`: Append user input to the file.
 
 **Functions/Modules You Can Use**  
 - `input()` or `sys.argv`
-- `open()` in read, write, append modes
-- Possibly string formatting for success messages
+  - `open()` in read, write, append modes
+  - Possibly string formatting for success messages
 
 **Different Ways to Solve (Conceptual)**  
 1. Use a function for each mode.  
-2. Simulate `argparse` by parsing command-line arguments manually.
+   2. Simulate `argparse` by parsing command-line arguments manually.
 
 **Next Exercise**  
 N/A (this is the last exercise)
