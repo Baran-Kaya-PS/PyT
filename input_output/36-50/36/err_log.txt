@@ -1,0 +1,5 @@
+Line 2 : {'name': 'Bob', 'age': 'thirty-five', 'city': 'London'}
+Line 4 : {'name': 'Diana', 'age': 23}
+Line 5 : {'name': 123, 'age': 30, 'city': 'Oslo'}
+Line 6 : {'name': 'Frank', 'age': 46, 'city': None}
+Line 11 : {'name': 'Kate', 'age': 'forty', 'city': 'Dublin'}
