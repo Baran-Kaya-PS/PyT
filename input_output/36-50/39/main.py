@@ -5,3 +5,6 @@ def head(fp,N):
             print(data)
         else:
             print("file is empty")
+
+def tail(fp,N):
+    pass
