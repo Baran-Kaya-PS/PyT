@@ -1,10 +1,15 @@
-def head(fp,N):
-    with open(fp,'r') as f:
-        data = f.read(N)
-        if data:
-            print(data)
-        else:
-            print("file is empty")
+from collections import deque
 
-def tail(fp,N):
-    pass
+
+def head(fp:str,n:int=10) -> None:
+    with open(fp,encoding='utf-8') as f:
+        for _ in range(n):
+            line = f.readline()
+            if not line:
+                break
+            print(line,end="")
+
+def tail(fp,n:int=10)-> None:
+    with open(fp,encoding='utf-8') as f:
+        for line in deque(f,maxlen=n):
+            print(line,end="")
